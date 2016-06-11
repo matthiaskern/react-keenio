@@ -1,6 +1,6 @@
 {
   "name": "react-keenio",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React Component for Keen.io Charts",
   "main": "index.js",
   "scripts": {
