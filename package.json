@@ -1,19 +1,26 @@
 {
   "name": "react-keenio",
   "version": "1.0.0",
-  "description": "",
+  "description": "React Component for Keen.io Charts",
   "main": "index.js",
   "scripts": {
     "prepublish": "npm run build",
     "build": "babel ./src --out-dir ./dist --source-maps --presets es2015,react --plugins babel-plugin-add-module-exports"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "keen-io",
+    "react",
+    "chart",
+    "analytics",
+    "graph",
+    "metrics",
+    "visualization"
+  ],
+  "author": "Matthias Kern",
+  "license": "MIT",
   "dependencies": {
     "keen-js": "latest",
-    "react": "^15.1.0",
-    "react-dom": "^15.1.0"
+    "react": "^15.1.0"
   },
   "babel": {
     "presets": [
@@ -28,5 +35,16 @@
     "babel-polyfill": "^6.3.14",
     "babel-preset-es2015": "^6.1.18",
     "babel-preset-react": "^6.5.0"
-  }
+  },
+  "directories": {
+    "example": "example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthiaskern/react-keenio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/matthiaskern/react-keenio/issues"
+  },
+  "homepage": "https://github.com/matthiaskern/react-keenio#readme"
 }
