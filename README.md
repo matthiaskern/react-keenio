@@ -10,7 +10,7 @@ npm install --save react-keenio
 
 You have to supply a client, a query and a chartType as props.
 Furthermore all other configuration options found from the
-(keen.io visualization docs)[https://github.com/keen/keen-js/blob/master/docs/visualization.md#configuration]
+[keen.io visualization docs](https://github.com/keen/keen-js/blob/master/docs/visualization.md#configuration)
 are supported.
 
 Also, check out the demo in the `example` folder.

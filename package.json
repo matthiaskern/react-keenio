@@ -2,7 +2,7 @@
   "name": "react-keenio",
   "version": "1.0.2",
   "description": "React Component for Keen.io Charts",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "prepublish": "npm run build",
     "build": "babel ./src --out-dir ./dist --source-maps --presets es2015,react --plugins babel-plugin-add-module-exports"
