@@ -35,9 +35,16 @@ export default class Chart extends React.Component {
         this._chart.error(err.message);
       }
       else {
+        const customParse = this.props.customFunction;
+        let data = res.result;
+
         // Handle the response
+        if (customParse) {
+          data = customParse(data);
+        }
+
         this._chart
-          .parseRawData({result: res.result})
+          .parseRawData({ result: data })
           .render();
       }
     });
@@ -62,6 +69,7 @@ Chart.propTypes = {
   labelMapping: React.PropTypes.object,
   labels: React.PropTypes.array,
   chartOptions: React.PropTypes.object,
+  customFunction: React.PropTypes.func,
 };
 
 Chart.defaultProps = {
@@ -73,5 +81,5 @@ Chart.defaultProps = {
   colorMapping: {},
   labelMapping: {},
   labels: [],
-  chartOptions: {}
+  chartOptions: {},
 };
