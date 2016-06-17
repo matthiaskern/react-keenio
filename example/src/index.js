@@ -26,7 +26,7 @@ const parseData = data => {
 };
 
 ReactDOM.render(
-  <KeenChart client={client} query={pageviews_timeline} chartType="line" title="My Chart" library="c3" colors={["#49c5b1"]} customFunction={parseData}
+  <KeenChart client={client} query={pageviews_timeline} chartType="linechart" title="My Chart" colors={["#49c5b1"]} customFunction={parseData}
   />,
   document.querySelector("#app")
 );
