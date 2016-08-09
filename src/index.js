@@ -21,9 +21,7 @@ export default class Chart extends React.Component {
       .height(this.props.height)
       .width(this.props.width)
       .colors(this.props.colors)
-      .labelMapping(this.props.labelMapping)
       .colorMapping(this.props.colorMapping)
-      .labels(this.props.labels)
       .chartOptions(this.props.chartOptions)
       .prepare();
   }
@@ -45,6 +43,8 @@ export default class Chart extends React.Component {
 
         this._chart
           .parseRawData({ result: data })
+          .labelMapping(this.props.labelMapping)
+          .labels(this.props.labels)
           .render();
       }
     });
